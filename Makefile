@@ -1,5 +1,5 @@
 VERSION=4.0.0
-IMAGE=datawookie/r-ver-extended
+IMAGE=datawookie/r-extended
 
 # IMAGE -----------------------------------------------------------------------
 

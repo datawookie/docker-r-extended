@@ -19,6 +19,7 @@ RUN apt-get update -qq \
         libsodium-dev \
         libssl-dev \
         libtiff5-dev \
+        libmagick++-dev \
     && install2.r -r $CRAN_REPOSITORY --error \
         --deps TRUE \
         tidyverse \
@@ -38,5 +39,8 @@ RUN apt-get update -qq \
         ggtext \
         readxl \
         writexl \
+        magick \
+        urltools \
+        triebeard \
         Hmisc \
     && R -e "blogdown::install_hugo(version = '0.63.1', extended = TRUE)"
