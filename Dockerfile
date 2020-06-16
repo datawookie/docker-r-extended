@@ -34,6 +34,8 @@ RUN install2.r -r $CRAN_REPOSITORY --error \
         urltools \
         triebeard \
         Hmisc \
+        furrr \
+        tictoc \
     && R -e "blogdown::install_hugo(version = '0.63.1', extended = TRUE, force = TRUE)"
 
 CMD ["R"]
