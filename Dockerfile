@@ -36,6 +36,9 @@ RUN install2.r -r $CRAN_REPOSITORY --error \
         Hmisc \
         furrr \
         tictoc \
+        texPreview \
+        backports \
+        htmltools \
     && R -e "blogdown::install_hugo(version = '0.63.1', extended = TRUE, force = TRUE)"
 
 CMD ["R"]
