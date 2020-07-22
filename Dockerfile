@@ -39,6 +39,6 @@ RUN install2.r -r $CRAN_REPOSITORY --error \
         texPreview \
         backports \
         htmltools \
-    && R -e "blogdown::install_hugo(version = '0.63.1', extended = TRUE, force = TRUE)"
+    && R -e "blogdown::install_hugo(version = '0.74.2', extended = TRUE, force = TRUE)"
 
 CMD ["R"]
